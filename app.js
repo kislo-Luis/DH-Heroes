@@ -1,5 +1,5 @@
 const express = require ('express'); // requiero express
-const app = express(); //inicio express
+const app = express(); //a app se le asigna toda la lógica (¡los métodos!) de express
 const path = require ('path'); //requiero path
 app.use(express.static('public')); //ubicacion de archivos estaticos
 
@@ -16,6 +16,8 @@ app.listen(3030,()=>console.log('server running')); // puerto asignado para el s
  app.get('/lovelace', (req, res)=>res.sendFile(path.join(__dirname,'views/lovelace.html')));
  app.get('/turing', (req, res)=>res.sendFile(path.join(__dirname,'views/turing.html')));
 
+
+ //excelente trabajo Luis!
  
 
 
